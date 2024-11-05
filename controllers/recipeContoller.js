@@ -29,7 +29,7 @@ exports.favoiriteFood = async (req, res, next) => {
     if (!user.favoriteRecipes.includes(recipeId)) {
       user.favoriteRecipes.push(recipeId); 
       await user.save();
-      return res.status(200).json({ message: "Recipe added to favorites." });
+      return res.status(200).json({ message: "Recipe adde to favorites." });
     } else {
       return res
         .status(400)
